@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="netflix_clone.css">
+    <title>Netflix Clone</title>
+    <script>
+        function validate()
+         {
+             var test=document.getElementById("mobile").value;
+             var regex=/^[6-9][0-9]{9}$/;
+             if (regex.test(test))
+              {
+                alert("Valid Mobile Number");
+                document.getElementById("mobilelabel").style.color="green";
+                document.getElementById("mobilelabel").innerHTML="Valid Mobile Number";
+                document.getElementById("mobilelabel").style.visibility="visible"; 
+             } 
+             else
+             {
+                 alert("Invalid Mobile Number");
+                 document.getElementById("mobilelabel").style.visibility="visible";                
+             }        
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="coaching_name"><h1>Tiwari    Classes</h1></div>
+    <div class="navbar">
+        <div class="firstsection">
+            <ul class="firstul">
+                <img src="css/Images/small_laptop.jpg" alt="Owners Image" class="logo">
+                <div class="navlist">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="secondsection">
+                <input type="search" placeholder="Search" id="search">
+                <button><a href="#Search" id="btn1">Search</a></button>
+            </div>
+        </div>
+    </div>
+    <marquee direction="right" behaviour=scroll loop=10 style="color: crimson; font-family: cursive;"><h3>Admissions are Open !!    Admissions are Open !!    Admissions are Open !!</h3></marquee>
+    <div class="tagline">
+        <div class="tagtext"><p>Your Search For An Ideal Coaching Centre Ends Here :)</p></div>
+        
+        
+    </div>
+    <div class="firstpara">
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+    </div>
+    <div class="contents">
+        <p>What We Offer ?</p>
+        <div class="whatoffer">
+            
+            <div class="sec">
+                <div class="listheading">
+                    <h1>Secondary</h1>                    
+          </div>
+                <div class="listcontent">
+                    <li>Engilsh</li>
+                    <li>Maths</li>
+                    <li>Science</li>
+                    <li>Social Science</li>
+                    <li>Hindi</li>
+                </div>      
+            </div>
+            <div class="sec">
+                <div class="listheading">
+                    <h1>Senior Secondary</h1>                    
+          </div>
+                <div class="listcontent">
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Maths</li>
+                    <li>Business Study</li>
+                    <li>Economics</li>
+                </div>      
+            </div>
+            <div class="sec">
+                <div class="listheading">
+                    <h1>IT Subjects</h1>                    
+          </div>
+                <div class="listcontent">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                </div>      
+            </div>
+        </div>
+    </div>
+    <div class="form1">
+        <h3>Raise Your Query</h3>
+        <form>
+            <label for="fname" class="label">First Name</label>
+            <input type="text" id="fname" name="firstName" placeholder="Your First Name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastName" placeholder="Your Last Name">
+
+            <label for="Class">Age</label>
+            <input type="text" id="class" name="class" placeholder="Class">
+
+            <label for="Mobile">Age</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+            <label id="mobilelabel" style="visibility: hidden; color: red; font-size: 22px;">Invalid Mobile Number</label>
+            
+            <label for="Comments">Comments</label>
+            <textarea id="comments" name="Comments" rows="4" cols="75">Type Your Comments Here.........              
+                </textarea>
+                <input type="submit" onclick="validate()">
+        </form>
+    </div>
+    <footer>
+        <p class="text-center background">
+            Copyright &copy; 2027-All rights reserved
+        </p>
+    </footer>
+</body>
+</html>
